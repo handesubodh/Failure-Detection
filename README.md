@@ -1,2 +1,2 @@
-# Failure-Detection
-Linux, AWS, EC2, Shell Scripting, Java, Maven, Jenkins, TomCat
+# Cloud-DevOps_Failure-Detection-
+Technology Stack Required: AWS, EC2, Linux, Shell Scripting, Java, Maven, Jenkins, TomCat
