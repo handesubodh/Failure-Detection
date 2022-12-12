@@ -1,4 +1,4 @@
-pipeline {
+opipeline {
    agent any
 
    tools {
@@ -36,7 +36,7 @@ pipeline {
     stage ('success'){
             steps {
                 script {
-                    currentBuild.result = 'SUCCESS'
+                    currentBuild.result = 'PIPELINE SUCCESS'
                 }
             }
         }
@@ -45,14 +45,14 @@ pipeline {
     post {
         failure {
             script {
-                currentBuild.result = 'FAILURE'
+                currentBuild.result = 'PIPELINE FAILURE'
             }
         }
 
         always {
             step([$class: 'Mailer',
                 notifyEveryUnstableBuild: true,
-                recipients: "balallala@gmail.com",
+                recipients: "handesubodh@gmail.com", "1132210551@mitwpu.edu.in"
                 sendToIndividuals: true])
         }
     }
