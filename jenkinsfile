@@ -3,14 +3,14 @@ pipeline {
   stages {
     stage('getscm') {
       steps {
-        git(url: 'https://github.com/jmstechhome/javatest.git', branch: 'master', credentialsId: 'github_credentials')
+        git(url: 'https://github.com/handesubodh/Failure-Detection.git', branch: 'master', credentialsId: 'github_credentials')
       }
     }
 
     stage('') {
       steps {
-        sh '''javac HelloWorld.java
-java HelloWorld'''
+        sh '''javac app.java
+java app'''
       }
     }
 
